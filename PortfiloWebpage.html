@@ -9,32 +9,57 @@
         <main>
             <h1>DANIEL CANHEDO'S WEBPAGE</h1>
             <h2>Welcome to my personal webpage!</h2>
-            
-                <div id="photo">
-                    <section>
-                        <figure>
+            <section>
+                <div class="container"> 
+                    <div id="photo">
                             <img src="danielmatterhorn.jpg" alt="Daniel in Switzerland" width="200">
-                        </figure>
-                        
+                        </div>
+                        <div id="contact">
                             <h3>Contact Information</h3>
-                            <div id="contact">
-                                <p>Daniel Olintho Canhedo</p>
-                                <p>Syracuse University</p>
-                                <p>College of Engineering and Computer Science</p>
-                                <p>(914) 954-4450</p>
-                                <p>danielcanhedo@gmail.com</p>
-                                <p><a href="https://github.com/Daniwave100">Github</a></p>
-                                <p><a href="https://www.linkedin.com/in/daniel-canhedo-7821a722a/">Linkedin</a></p>
+                                    <p>Daniel Olintho Canhedo</p>
+                                    <p>Syracuse University</p>
+                                    <p>College of Engineering and Computer Science</p>
+                                    <p>(914) 954-4450</p>
+                                    <p>danielcanhedo@gmail.com</p>
+                                    <p><a href="https://github.com/Daniwave100">Github</a></p>
+                                    <p><a href="https://www.linkedin.com/in/daniel-canhedo-7821a722a/">Linkedin</a></p>
+                                
                             </div>
-                    </section>
+                    
                 </div>
-                
-        <div id="Bio">
-            <br>
-            <br>
-            <p>I am a Computer Science major at Syracuse University. My academic journey is supplemented by hands-on experience at DARPA, where I contribute to the development of AI solutions to combat misinformation in digital media. With expertise in programming and AI model development, I am actively seeking to apply and expand my skills through real-world projects while making meaningful contributions to every opportunity that comes my way.</p>
-                        <p>I am also an Army ROTC Cadet and a soldier in the New York Army National Guard. I am currently honing my leadership and teamwork abilities, with the ultimate goal of one day serving as a Cyber Warfare Officer in the Army National Guard.</p>
-        </div>
+            </section>
+        <section>
+            <div id="Bio">
+                <p>I am a Computer Science major at Syracuse University. I am also an Army ROTC Cadet and a soldier in the New York Army National Guard. I am currently honing my leadership and teamwork abilities, with the ultimate goal of one day serving as a Cyber Warfare Officer in the Army National Guard.</p>
+                <p>I love to play soccer, run, spend time in the sun, and explore the world.</p>
+            </div>
+        </section> 
+
+        <section>
+            <h3>Research</h3>
+            <p><strong>YouTube Comment Bot Detector</strong> <em>DARPA</em></p>
+            <p>In March of 2022 during the onset of the Russian-Ukraine War, a video of the President of Ukraine, Volodymyr Zelenskyy surfaced. In the video, Zelenskyy calls for the immediate laydown of weapons by Ukrainian soldiers. However, this video was nothing more than a hoax, perpetuated by artificial intelligence (AI) deepfakes. 
+                The prevalence of disinformation facilitated by AI is a growing concern, posing a threat to not only individuals, but organizations, countries, and arguably civilization itself. However,  the Defense Advanced Research Projects Agency (DARPA) is working towards solutions to detect and combat such threats.
+                DARPA's Semantic Forensics program aims to develop semantic technologies that can detect and assess falsified media, including images, text, audio and video.</p>
+            <p>Under guidance of research professor Dr. Jason Davis, the SemaFor team at Syracuse University is a subset working to collect and label data to be used for training AI models for DARPA. RAs have the ability to use said data for their own research and learning. </p>
+            <p>Bots and fake comments have become a huge problem on many social media platforms. It has become increasingly difficult for the average person to distinguish real comments from fake. While some bots merely serve to manipulate an algorithm for more outreach, some are instead being used for the purpose of scamming people out of their hard-earned money.
+                In the image below, bots emulate a real conversation with one eventually referring to a fake financial advisor. An unsuspecting victim would then search the advisor on the internet, and eventually find a web-page where they can then get in contact with the scammer.</p>
+            <p>We collected over 10,000 comments from different YouTube financial videos (where scam comments are most prevalent) using a Python script and YouTube’s Cloud API. We then labeled each YouTube comment conversation as malicious or not. To do so, we utilized the following parameters to classify our data collection: </p>
+            <p>There are four important parameters used for bot classification. 1. Comment length 2. like count 3. time commented from hour of upload 4. financial advisor name</p>
+            <p>Using a pre-trained model that the Syracuse SemaFor team has, the goal is to use the collected data to create a generative model that can accurately distinguish malicious bot comments with a 90% success rate.</p>
+        </section>
+
+        <section>
+            <h3>Personal Projects</h3>
+            <p><strong>Data2LinearRegression</strong> <em>CuseHacks Hackathon</em></p>
+            <p>description and image</p>
+            <p><strong>Chess</strong> <em>Personal</em></p>
+            <p>description and image</p>
+            <p><strong>Tiktaktoe</strong> <em>Personal</em></p>
+            <p>description and image</p>
+        </section>
+
+        
 
             <section>
                 <!-- Add email me section here -->

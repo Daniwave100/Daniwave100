@@ -1,17 +1,39 @@
-h1, h2 {
-    text-align: center
+body {
+    font-family: "Times new roman", Times, serif;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
-#photo img{
-    float: right;
+.container {
+    display: flex; /* Enables side-by-side layout */
+    align-items: flex-start; /* Aligns the image and text vertically */
+    justify-content: flex-start; /* Ensures content starts from the left */
+    width: 100%; /* Ensures it spans full width */
+    flex-direction: row-reverse; /* Reverses the order: image on right, text on left */
 }
 
-#bio {
-
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
+/* Contact information styling */
 #contact {
-    line-height: 0.25;
+    max-width: 300px; /* Adjusts the width of the contact section */
+    text-align: left; /* Keeps text aligned to the left */
+    align-self: flex-start;
+    margin-right: auto;
+}
+
+#contact p {
+    margin: 1;
+    padding-bottom: 3px;
+}
+
+/* Photo styling */
+#photo {
+    flex-shrink: 0;
+}
+
+#photo img {
+    max-width: 200px; /* Adjust the image size */
+    height: auto; /* Keeps the aspect ratio */
+    display: block; /* Ensures proper alignment */
 }
