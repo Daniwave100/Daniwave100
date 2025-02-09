@@ -37,3 +37,44 @@ body {
     height: auto; /* Keeps the aspect ratio */
     display: block; /* Ensures proper alignment */
 }
+
+.semafor {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column; /* Stacks projects vertically */
+    align-items: center;
+    gap: 30px; /* Adds space between projects */
+    width: 100%;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 80%;
+  }
+
+.projectphotos {
+    flex: center;
+    justify-content: center;
+    min-width: 250px;
+    width:250px;
+    margin-right: 20px;
+    flex-shrink: 0;
+  }
+
+.projecttext {
+    margin-left: 40px;
+    text-align: left;
+}
+
+h3 {
+    font-size: 25px;
+}
