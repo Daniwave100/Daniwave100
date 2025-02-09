@@ -1,0 +1,17 @@
+h1, h2 {
+    text-align: center
+}
+
+#photo img{
+    float: right;
+}
+
+#bio {
+
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#contact {
+    line-height: 0.25;
+}
