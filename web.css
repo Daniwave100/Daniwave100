@@ -1,14 +1,14 @@
 body {
     font-family: "Times new roman", Times, serif;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 100px;
+    margin-left: 220px;
+    margin-right: 220px;
+    margin-top: 50px;
     margin-bottom: 100px;
 }
 
 .container {
     display: flex; /* Enables side-by-side layout */
-    align-items: flex-start; /* Aligns the image and text vertically */
+    align-items: center; /* Aligns the image and text vertically */
     justify-content: flex-start; /* Ensures content starts from the left */
     width: 100%; /* Ensures it spans full width */
     flex-direction: row-reverse; /* Reverses the order: image on right, text on left */
@@ -47,32 +47,33 @@ body {
 
 .projects {
     display: flex;
-    flex-direction: column; /* Stacks projects vertically */
+    flex-direction: column;
     align-items: center;
-    gap: 30px; /* Adds space between projects */
+    gap: 30px;
     width: 100%;
 }
 
 .project {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 30px;
-    width: 80%;
+    margin-bottom: 20px;
+    
   }
 
 .projectphotos {
-    flex: center;
+    flex: auto;
     justify-content: center;
-    min-width: 250px;
-    width:250px;
-    margin-right: 20px;
+    min-width: 210px;
+    width:210px;
     flex-shrink: 0;
   }
 
 .projecttext {
     margin-left: 40px;
     text-align: left;
+    min-width: 400px;
 }
 
 h3 {
