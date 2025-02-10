@@ -59,21 +59,28 @@ body {
     justify-content: flex-start;
     gap: 30px;
     margin-bottom: 20px;
-    
+    min-height: 250px;
+    width: 100%
   }
 
 .projectphotos {
-    flex: auto;
+    flex: 0 0 210px;
     justify-content: center;
     min-width: 210px;
-    width:210px;
+    width: 210px;
     flex-shrink: 0;
   }
 
 .projecttext {
-    margin-left: 40px;
+    flex: 1;
+    margin-left: 20px;
     text-align: left;
     min-width: 400px;
+    height: 100%; /* Ensures consistency */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 h3 {
