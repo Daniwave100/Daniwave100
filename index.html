@@ -46,9 +46,18 @@
             
             <p>Bots and fake comments have become a huge problem on many social media platforms. It has become increasingly difficult for the average person to distinguish real comments from fake. While some bots merely serve to manipulate an algorithm for more outreach, some are instead being used for the purpose of scamming people out of their hard-earned money.
                 In the image below, bots emulate a real conversation with one eventually referring to a fake financial advisor. An unsuspecting victim would then search the advisor on the internet, and eventually find a web-page where they can then get in contact with the scammer.</p>
-            <p>We collected over 10,000 comments from different YouTube financial videos (where scam comments are most prevalent) using a Python script and YouTube’s Cloud API. We then labeled each YouTube comment conversation as malicious or not. To do so, we utilized the following parameters to classify our data collection: </p>
-            <p>There are four important parameters used for bot classification. 1. Comment length 2. like count 3. time commented from hour of upload 4. financial advisor name</p>
-            <p>Using a pre-trained model that the Syracuse SemaFor team has, the goal is to use the collected data to create a generative model that can accurately distinguish malicious bot comments with a 90% success rate.</p>
+            <p>I collected over 10,000 comments from different YouTube financial videos (where scam comments are most prevalent) using a Python script and YouTube’s Cloud API. I then labeled each YouTube comment conversation as malicious or not. To do so, I utilized the following parameters to classify the data: </p>
+            <ol>
+                <li>The comment must be part of a conversation thread of at least 3 comments. </li>
+                <li>The conversation must have a comment that refers to a "financial advisor" which includes a name.</li>
+                <li>The entire conversation must take place within one week of the first comment.</li>
+            
+            </ol>
+            
+            <p>Analyzing the dataset of 10,000 comments, roughly 300 were classified as bot comments. While this only accounts for 3.41% of our entire dataset, bot comments usually like each others comments to manipulate the YouTube algorithm, and generate higher search queries. Essentially, bot comments almost always have hundreds and even thousands of likes, bringing them to the top of YouTube comment sections, making it easier for people to spot them.</p>
+            <p>Furthermore, by analyzing average comment length, we can clearly see that bot comments on average are roughly 50 words longer than a typical comment. This is because these comments try to emulate a real conversation compared to simply making a brief statement on a YouTube video comment section. This is a key factor that the AI model will use to classify bot comments from regular comments.</p>
+            <p>Another key factor, and arguably the most important factor that plays into classification will be the use of names in the comment. The main part of the scam is getting a real person to search up the fictional financial advisor, where the goal is to lure the victim into sending money. AI models use tokenization, the break-up of long sentences into words, to score a comment's validity. Here, the model would identify “Grace Adams Cook” as a name and use that as a clue that it is likely a bot comment.</p>
+            <p>Ultimately, the goal is to create a generative AI model that can successfully distinguish phishing comments on YouTube. By implementing technologies such as this, we can minimize the chances of people falling victim to scams. Though our project is still developing, one day we hope our technology can be utilized by social media platforms such as YouTube to create a safer internet for all.</p>
         </section>
 
         <section>
