@@ -5,7 +5,7 @@
 I'm a Computer Science student at Syracuse University. I am also a Research Assistant at the Defense Advanced Research Projects Agency (DARPA), where I contribute to the development of AI solutions to combat misinformation in digital media. Read more about my research [here](https://daniwave100.github.io/DanielPersonalPage/).
 
 - 🔭 I’m currently working on a text-classifer model for DARPA.
-- 🌱 I’m currently learning about machine-learning techniques, data manipulation in Python, and refining my web development skills.
+- 🌱 I’m currently learning about machine-learning techniques and data manipulation in Python. I am also refining my web development skills.
 - 📫 How to reach me: [danielcanhedo@gmail.com](danielcanhedo@gmail.com)
 - ⚡ A bit about me: I love to play soccer, run, spend time outdoors, and explore the world.
 
