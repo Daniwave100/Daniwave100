@@ -2,25 +2,19 @@
 
 ## About Me
 
-I'm a passionate software developer with a keen interest in open-source projects and innovative technologies. I love to learn, experiment, and contribute to the developer community.
+I'm a Computer Science student at Syracuse University. I am also a Research Assistant at the Defense Advanced Research Projects Agency (DARPA), where I contribute to the development of AI solutions to combat misinformation in digital media. Read more about my research [here](https://daniwave100.github.io/DanielPersonalPage/).
 
-- 🔭 I’m currently working on various exciting projects.
-- 🌱 I’m currently learning new programming languages and frameworks.
-- 👯 I’m looking to collaborate on open-source projects.
-- 💬 Ask me about anything related to software development.
-- 📫 How to reach me: [Your Email](mailto:your.email@example.com)
-- ⚡ Fun fact: I enjoy hiking and exploring nature.
+- 🔭 I’m currently working on a text-classifer model for DARPA.
+- 🌱 I’m currently learning about machine-learning techniques and refining my web development skills.
+- 📫 How to reach me: [danielcanhedo@gmail.com](danielcanhedo@gmail.com)
+- ⚡ A bit about me: I love to play soccer, run, spend time outdoors, and explore the world.
 
 ## Skills
 
-- Programming Languages: JavaScript, Python, Java, C++
-- Web Development: HTML, CSS, React, Node.js
-- Databases: MySQL, MongoDB
-- Tools: Git, Docker, Kubernetes
-
-## GitHub Stats
-
-![Daniwave100's GitHub stats](https://github-readme-stats.vercel.app/api?username=Daniwave100&show_icons=true&theme=radical)
+- Programming Languages: Python, Java, C++, JavaScript
+- Web Development: HTML, CSS
+- Databases: MySQL
+- Tools: Git, VSCode, JetBrains IDE
 
 ## Top Languages
 
@@ -28,16 +22,16 @@ I'm a passionate software developer with a keen interest in open-source projects
 
 ## Latest Projects
 
-- [Project 1](https://github.com/Daniwave100/project1) - Brief description of project 1.
-- [Project 2](https://github.com/Daniwave100/project2) - Brief description of project 2.
-- [Project 3](https://github.com/Daniwave100/project3) - Brief description of project 3.
+- [YouTube Bot Neural Network Classifier](https://github.com/Daniwave100/YouTube-Bot-NN-Classifier) - Detect bot vs. Human-written YouTube comments using NLP and a Neural Network Classifier.
+- [YouTube Comment Scraper](https://github.com/Daniwave100/YouTube-Comment-Scraper) - YouTube Comment Scraper for DARPA Research data collection.
+- [Data2LinearRegression](https://github.com/diegomaldon/Data2LinearRegressionModel) - Web interface allowing a user to upload a CSV file, store its data in a SQLite database, and create a linear regression model based off   of two provided variables.
 
 ## Connect with Me
 
+- [Personal Website](https://daniwave100.github.io/DanielPersonalPage/)
 - [LinkedIn](https://www.linkedin.com/in/your-linkedin-profile)
-- [Twitter](https://twitter.com/your-twitter-handle)
-- [Personal Website](https://your-website.com)
+
+##
 
 Thank you for visiting my profile!
- 
-🔗 Check it out: https://daniwave100.github.io/DanielPersonalPage/
+
