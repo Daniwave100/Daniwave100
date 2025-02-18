@@ -2,7 +2,7 @@
 
 ## About Me
 
-I'm a Computer Science student at Syracuse University. I am also a Research Assistant at the Defense Advanced Research Projects Agency (DARPA), where I contribute to the development of AI solutions to combat misinformation in digital media. Read more about my research [here](https://daniwave100.github.io/DanielPersonalPage/).
+I'm a Computer Science student at Syracuse University. I am also a Research Assistant at the Defense Advanced Research Projects Agency (DARPA), where I contribute to the development of AI solutions to combat misinformation in digital media. Read more about my research [here](https://daniwave100.github.io/Daniwave100/).
 
 - 🔭 I’m currently working on a text-classifer model as part of my research for the DARPA SemaFor program.
 - 🌱 I’m currently learning about machine-learning techniques and data manipulation in Python. I am also refining my web development skills.
