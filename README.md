@@ -28,7 +28,7 @@ I'm a Computer Science student at Syracuse University. I am also a Research Assi
 
 ## Connect with Me
 
-- [Personal Website](https://daniwave100.github.io/DanielPersonalPage/)
+- [Personal Website](https://daniwave100.github.io/Daniwave100/)
 - [LinkedIn](https://www.linkedin.com/in/your-linkedin-profile)
 
 ##
