@@ -13,7 +13,7 @@ I'm a Computer Science student at Syracuse University. I am also a Research Assi
 
 - Programming Languages: Python, Java, C++, JavaScript
 - Web Development: HTML, CSS
-- Databases: MySQL
+- Databases: MySQL, SQLite
 - Tools: Git, VSCode, JetBrains IDE
 
 ## Top Languages
