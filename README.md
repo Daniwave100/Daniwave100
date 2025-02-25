@@ -22,10 +22,9 @@ I'm a Computer Science student at Syracuse University. I am also a Research Assi
 
 ## Latest Projects
 
-- [Analyzing Syracuse Municipal Complaint Resolution](https://github.com/Daniwave100/Analyzing-Syracuse-Municipal-Complaint-Resolution) - Exploring how efficiently Syracuse handles municipal complaints through the SYRCityline dataset, which contains reports on non-emergency issues submitted by residents.
 - [YouTube Bot Neural Network Classifier](https://github.com/Daniwave100/YouTube-Bot-NN-Classifier) - Detect bot vs. Human-written YouTube comments using NLP and a Neural Network Classifier.
 - [YouTube Comment Scraper](https://github.com/Daniwave100/YouTube-Comment-Scraper) - YouTube Comment Scraper for DARPA Research data collection.
-- [Data2LinearRegression](https://github.com/diegomaldon/Data2LinearRegressionModel) - Web interface allowing a user to upload a CSV file, store its data in a SQLite database, and create a linear regression model based off   of two provided variables.
+- [Analyzing Syracuse Municipal Complaint Resolution](https://github.com/Daniwave100/Analyzing-Syracuse-Municipal-Complaint-Resolution) - Exploring how efficiently Syracuse handles municipal complaints through the SYRCityline dataset, which contains reports on non-emergency issues submitted by residents.
 
 ## Connect with Me
 
