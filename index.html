@@ -29,8 +29,8 @@
             </section>
         <section>
             <div id="Bio">
-                <p>I am a Computer Science major at Syracuse University. I am also an Army ROTC Cadet and a soldier in the New York Army National Guard. I am currently honing my leadership and teamwork abilities, with the ultimate goal of one day serving as a Cyber Warfare Officer in the Army National Guard.</p>
-                <p>I love to play soccer, run, spend time in the sun, and explore the world.</p>
+                <p>I am a Computer Science major at Syracuse University. I have interest in programming applications in relation to data and am currently delving into the world of front-end development. I am also an Army ROTC Cadet and a soldier in the New York Army National Guard. I am currently honing my leadership and teamwork abilities, with the ultimate goal of one day serving as a Cyber Warfare Officer in the Army National Guard.</p>
+                <p>I love soccer (Liverpool is the best), chasing new running PRs, spending time outside, and exploring the world.</p>
             </div>
         </section> 
 
@@ -41,7 +41,7 @@
             <p>In March of 2022 during the onset of the Russian-Ukraine War, a video of the President of Ukraine, Volodymyr Zelenskyy surfaced. In the video, Zelenskyy calls for the immediate laydown of weapons by Ukrainian soldiers. However, this video was nothing more than a hoax, perpetuated by artificial intelligence (AI) deepfakes. 
                 The prevalence of disinformation facilitated by AI is a growing concern, posing a threat to not only individuals, but organizations, countries, and arguably civilization itself. However,  the Defense Advanced Research Projects Agency (DARPA) is working towards solutions to detect and combat such threats.
                 DARPA's Semantic Forensics program aims to develop semantic technologies that can detect and assess falsified media, including images, text, audio and video.</p>    
-            <p> Under guidance of research professor Dr. Jason Davis, the SemaFor team at Syracuse University is a subset working to collect and label data to be used for training AI models for DARPA. RAs have the ability to use said data for their own research and learning. </p>
+            <p> <p>Under the mentorship of research professor Dr. Jason Davis, the SemaFor team at Syracuse University is a specialized research group dedicated to collecting, cleaning, and labeling data for training AI models as part of DARPA’s broader SemaFor initiative. This work is supported by funding from the Syracuse Office of Undergraduate Research and Creative Engagement (SOURCE).</p>
             <iframe width="420" height="315" src="https://www.youtube.com/embed/10ENWUrzj-o"></iframe>
             
             <p>Bots and fake comments have become a huge problem on many social media platforms. It has become increasingly difficult for the average person to distinguish real comments from fake. While some bots merely serve to manipulate an algorithm for more outreach, some are instead being used for the purpose of scamming people out of their hard-earned money.
@@ -55,15 +55,35 @@
             </ol>
             
             <p>Analyzing the dataset of 10,000 comments, roughly 300 were classified as bot comments. While this only accounts for 3.41% of our entire dataset, bot comments usually like each others comments to manipulate the YouTube algorithm, and generate higher search queries. Essentially, bot comments almost always have hundreds and even thousands of likes, bringing them to the top of YouTube comment sections, making it easier for people to spot them.</p>
-            <p>Furthermore, by analyzing average comment length, we can clearly see that bot comments on average are roughly 50 words longer than a typical comment. This is because these comments try to emulate a real conversation compared to simply making a brief statement on a YouTube video comment section. This is a key factor that the AI model will use to classify bot comments from regular comments.</p>
-            <p>Another key factor, and arguably the most important factor that plays into classification will be the use of names in the comment. The main part of the scam is getting a real person to search up the fictional financial advisor, where the goal is to lure the victim into sending money. AI models use tokenization, the break-up of long sentences into words, to score a comment's validity. Here, the model would identify “Grace Adams Cook” as a name and use that as a clue that it is likely a bot comment.</p>
-            <p>Ultimately, the goal is to create a generative AI model that can successfully distinguish phishing comments on YouTube. By implementing technologies such as this, we can minimize the chances of people falling victim to scams. Though our project is still developing, one day we hope our technology can be utilized by social media platforms such as YouTube to create a safer internet for all.</p>
+            <p>Furthermore, by analyzing average comment length, it is clear that bot comments on average are roughly 50 words longer than a typical comment. This is because bot comments try to emulate a real conversation compared to simply making a brief statement on a YouTube video comment section. This is a key factor that the model will use to classify bot comments from regular comments.</p>
+            <p>Another key factor, and arguably the most important factor that plays into classification will be the use of names in the comment. The main part of the scam is getting a real person to search up the fictional financial advisor, where the goal is to lure the victim into sending money. Generative AI models use tokenization, the break-up of long sentences into words, to score a comment's validity. Here, the model would identify “Grace Adams Cook” as a name and use that as a clue that it is likely a bot comment.</p>
+            <p>My current model is a convolutional neural network. The model is currently in its early stages, utilizing a feedforward architecture trained on TF-IDF vectorized text data to classify bot-generated comments. The model consists of an input layer with 186 features, corresponding to the most relevant words from the dataset, followed by four hidden layers with 500 neurons each, using ReLU activation to introduce non-linearity. The final output layer applies LogSoftmax activation for binary classification (bot or not bot). Training is conducted using the Negative Log-Likelihood Loss (NLLLoss) function, optimized with Adam optimizer (learning rate = 0.01) to adjust weights via gradient descent. The dataset undergoes preprocessing with NLTK, including stopword removal and stemming, ensuring clean data for efficient training. While the current model focuses solely on textual features, future iterations will incorporate like count, reply count, and comment timestamps as additional parameters, as bots often manipulate engagement metrics to gain visibility. </p>
+            <p>Eventually, I plan to explore alternative machine learning techniques, such as Random Forest Classifiers, Decision Tree Classifiers, and Transformer-based architecture models, to evaluate their performance against our neural network in bot detection. By integrating these techniques and refining our training pipeline, I aim to improve classification accuracy and develop a more robust model capable of detecting evolving bot behaviors.</p>
+            <p>Ultimately, the goal is to create a model that can successfully distinguish phishing comments on YouTube. By implementing technologies such as this, we can minimize the chances of people falling victim to scams. Though our project is still developing, one day we hope our technology can be utilized by social media platforms such as YouTube to create a safer internet for all.</p>
+            <p>Check out some repositories here:</p>
+            <p><a href="https://github.com/Daniwave100/YouTube-Bot-NN-Classifier/tree/main">Neural Network Text Classifier Model</a></p>
+            <p><a href="https://github.com/Daniwave100/YouTube-Comment-Scraper">YouTube Comment Scraper</a></p>
         </section>
 
         <section>
             <h3>Personal Projects</h3>
             <div class="projects">
             
+                <div class="project">
+                    <div class="projectphotos">
+                        <img src="Datathon.png" width="210px">
+                    </div>
+                    <div class="projecttext">
+                        <p><strong>Analyzing Syracuse Municipal Complaint Resolution</strong> <em>CuseHacks Datathon</em></p>
+                        <p>This project analyzed municipal complaint resolution efficiency in Syracuse, leveraging data visualization and predictive modeling.</p>
+                        <ul>
+                            <li>Recognized for Best Presentation at CuseHacks 2025 for delivering compelling visual storytelling and actionable municipal insights.</li>
+                            <li>Used Python, Pandas DataFrame, and Seaborn to clean, categorize, and visualize large-scale city complaint reports, revealing key trends in departmental performance and resolution efficiency.</li>
+                            <li>Leveraged Scikit-Learn (sklearn) with Linear Regression to predict complaint resolution times and evaluate how different city departments improve over time.</li>
+                        </ul>
+                    </div>
+                </div>
+
             <div class="project">
                 <div class="projectphotos">
                     <img src="frontend.png" width="210px">
@@ -80,6 +100,7 @@
                     </ul>
                 </div>
             </div>
+
             <div class="project">
                 <div class="projectphotos">
                     <img src="Chess.png" width="210px">
@@ -93,21 +114,6 @@
                     </ul>
                 </div>
             </div>
-            <div class="project">
-                <div class="projectphotos">
-                    <img src="Tiktaktoe.png" width="210px">
-                </div>
-                <div class="projecttext">
-                    <p><strong>Tiktaktoe</strong> <em>Personal</em></p>
-                    <p>This project encompasses a tiktaktoe game ran in the Python Console</p>
-                    <ul>
-                        <li>Implemented a coordinate-based input system (a1, b2, c3, etc.) to select moves.</li>
-                        <li>Included error handling to ensure valid user input and prevent moves on occupied spaces.</li>
-                        <li>Structured the game with separate functions for player moves, AI moves, and win detection.</li>
-                    </ul>
-                </div>
-            </div>
-            
         
         </div>
         </section>
@@ -137,7 +143,7 @@
                     <p>Basic set theory and symbolic logic. Methods of proof, including mathematical induction. Relations, partitions, partial orders, functions, and graphs.</p>
                 </div>
                 <div class="coursework">
-                    <p><em>CIS 351: Data Structures: </em></p>
+                    <p><em>CIS 351: Data Structures </em></p>
                     <p>Abstract data structures including arrays, lists, trees, binary search trees, priority queues, graphs.  Algorithm analysis.  Examples include data structures used for security-related applications.</p>
                 </div>
                 <div class="coursework">
