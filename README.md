@@ -26,9 +26,10 @@
 ###
 
 <p align="left">
-- 🤖 <strong>Regeneron Documentation AI Agent</strong> <br>
-A user-friendly chatbot that connects to Dremio databases, extracts and summarizes sample data, and outputs thorough documentation. The goal is to help teams make sense of complex data by providing clear documentation and intelligent search capabilities leveraging LLMs and ML techniques.<br><br>
-
+- 🤖 <strong>Documentation AI Agent</strong> <br>
+A user-friendly chatbot that connects to Dremio databases, extracts and summarizes sample data, and outputs thorough documentation. The goal is to help teams make sense of complex data by providing clear documentation and intelligent search capabilities leveraging LLMs and ML techniques.<br>
+</p>
+<p>
 - 🧠 <strong>AI Bot Detector</strong> <br>
 A Neural Network (NN) Classifier using PyTorch and Term Frequency-Inverse Document Frequency (TF-IDF) vectorization to analyze YouTube comments and determine whether they are malicious bot comments or human-written.
 </p>
