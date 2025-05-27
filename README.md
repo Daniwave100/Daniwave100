@@ -12,7 +12,7 @@
 
 <p align="left">
 - 🔭 I’m currently working on a text-classifier model as part of my research for the DARPA SemaFor program.<br>
-- 🌐 I'm currently interning at Regeneron as a Data Developer Intern, developing a Documentation AI Agent<br>
+- 🌐 I'm currently interning at Regeneron as a Data Developer Intern.<br>
 - 📫 How to reach me: <a href="mailto:danielcanhedo@gmail.com">danielcanhedo@gmail.com</a><br>
 - ⚡ I love to play soccer, run marathons, spend time outdoors, and explore the world.<br><br>
 <a href="https://daniwave100.github.io/Daniwave100/">Personal Website</a><br>
