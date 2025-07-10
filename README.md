@@ -2,7 +2,7 @@
 
 ###
 
-<p align="left">Computer Science @ Syracuse University | Data Developer Intern @ Regeneron | AI Research Assistant @ DARPA</p>
+<p align="left">Computer Science @ Syracuse University | Software and Data Engineering Intern @ Regeneron | AI Research Assistant @ DARPA</p>
 
 ###
 
@@ -12,7 +12,7 @@
 
 <p align="left">
 - 🔭 I’m currently working on a text-classifier model as part of my research for the DARPA SemaFor program.<br>
-- 🌐 I'm currently interning at Regeneron as a Data Developer Intern.<br>
+- 🌐 I'm currently interning at Regeneron as a Software and Data Engineer Intern.<br>
 - 📫 How to reach me: <a href="mailto:danielcanhedo@gmail.com">danielcanhedo@gmail.com</a><br>
 - ⚡ I love to play soccer, run marathons, spend time outdoors, and explore the world.<br><br>
 <a href="https://daniwave100.github.io/Daniwave100/">Personal Website</a><br>
@@ -26,8 +26,8 @@
 ###
 
 <p align="left">
-- 🤖 <strong>Documentation AI Agent</strong> <br>
-A user-friendly chatbot that connects to Dremio databases, extracts and summarizes sample data, and outputs thorough documentation. The goal is to help teams make sense of complex data by providing clear documentation and intelligent search capabilities leveraging LLMs and ML techniques.<br>
+- 🤖 <strong>Data Lake AI Explorer</strong> <br>
+A user-friendly chatbot that helps data engineers and data analysts understand and draw insights of complex data by providing clear documentation and intelligent search capabilities. The chatbot implements agentic AI, retrieval augmented generation, and machine learning techniques to best produce results.<br>
 </p>
 <p>
 - 🧠 <strong>AI Bot Detector</strong> <br>
