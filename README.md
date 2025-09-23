@@ -12,7 +12,6 @@
 <p align="left">
 - 🔭 Currently developing a <strong>text-classifier model</strong> as part of DARPA SemaFor research.<br>
 - 📫 Reach me at: <a href="mailto:danielcanhedo@gmail.com">danielcanhedo@gmail.com</a><br>
-- ⚡ Passionate about soccer, marathons, the outdoors, and global exploration.<br><br>
 🌐 <a href="https://daniwave100.github.io/Daniwave100/">Personal Website</a> | 
 💼 <a href="https://www.linkedin.com/in/daniel-canhedo/">LinkedIn</a>
 </p>
