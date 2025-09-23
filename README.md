@@ -2,7 +2,7 @@
 
 <p align="left">
 🎓 Computer Science @ Syracuse University <br>
-🔬 AI Research Assistant @ DARPA (SemaFor Program)
+🔬 ML Research Assistant @ DARPA (SemaFor Program)
 </p>
 
 ---
