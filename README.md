@@ -21,6 +21,11 @@
 <h2 align="left">📈 Current Projects</h2>
 
 <p align="left">
+🧠 <strong>Personal Portfolio</strong> <br>
+HTML, CSS, and Javascript front-end portfolio.
+</p>
+
+<p align="left">
 🧠 <strong>AI Bot Detector</strong> <br>
 Neural Network Classifier built with <strong>PyTorch</strong> and <strong>TF-IDF</strong> vectorization to analyze YouTube comments, distinguishing between malicious bot activity and genuine human interaction.
 </p>
