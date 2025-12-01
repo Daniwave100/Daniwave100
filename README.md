@@ -1,7 +1,8 @@
 <h1 align="left">Hi there! 👋 I'm Daniel</h1>
 
 <p align="left">
-🎓 Computer Science @ Syracuse University <br>
+🍊 Computer Science @ Syracuse University <br>
+🤖 LLM Developer @ Sierra Solutions <br>
 🔬 ML Research Assistant @ DARPA (SemaFor Program)
 </p>
 
@@ -10,6 +11,7 @@
 <h2 align="left">🌌 About Me</h2>
 
 <p align="left">
+- 🤖 Working on LLM and agentic AI solutions for large-scale Pharmaceutical data
 - 🔭 Currently developing a <strong>text-classifier model</strong> as part of DARPA SemaFor research.<br>
 - 📫 Reach me at: <a href="mailto:danielcanhedo@gmail.com">danielcanhedo@gmail.com</a><br>
 🌐 <a href="https://daniwave100.github.io/Daniwave100/">Personal Website</a> | 
