@@ -11,7 +11,7 @@
 <h2 align="left">🌌 About Me</h2>
 
 <p align="left">
-- 🤖 Working on LLM and agentic AI solutions for large-scale Pharmaceutical data
+- 🤖 Working on LLM and agentic AI solutions for large-scale Pharmaceutical data.<br>
 - 🔭 Currently developing a <strong>text-classifier model</strong> as part of DARPA SemaFor research.<br>
 - 📫 Reach me at: <a href="mailto:danielcanhedo@gmail.com">danielcanhedo@gmail.com</a><br>
 🌐 <a href="https://daniwave100.github.io/Daniwave100/">Personal Website</a> | 
