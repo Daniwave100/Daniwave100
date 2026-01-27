@@ -12,6 +12,7 @@
 
 <p align="left">
 - 🤖 Working on LLM and agentic AI solutions for large-scale Pharmaceutical data.<br>
+- 📈 Developing "Portfolia", an LLM-powered Stock dashboard and news application. <br>
 - 🔭 Currently developing a <strong>text-classifier model</strong> as part of DARPA SemaFor research.<br>
 - 📫 Reach me at: <a href="mailto:danielcanhedo@gmail.com">danielcanhedo@gmail.com</a><br>
 🌐 <a href="https://daniwave100.github.io/Daniwave100/">Personal Website</a> | 
