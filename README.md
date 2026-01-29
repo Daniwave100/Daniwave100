@@ -1,8 +1,8 @@
 <h1 align="left">Hi there! 👋 I'm Daniel</h1>
 
 <p align="left">
-🍊 Computer Science @ Syracuse University <br>
 🤖 LLM Developer @ Sierra Solutions <br>
+🍊 Computer Science @ Syracuse University <br>
 🔬 ML Research Assistant @ DARPA (SemaFor Program)
 </p>
 
