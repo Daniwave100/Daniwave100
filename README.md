@@ -2,7 +2,7 @@
 
 <p align="left">
 🤖 LLM Developer @ Sierra Solutions <br>
-🍊 Computer Science @ Syracuse University <br>
+🍊 Computer Sciencec @ Syracuse University <br>
 🔬 ML Research Assistant @ DARPA (SemaFor Program)
 </p>
 
