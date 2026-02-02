@@ -1,161 +1,223 @@
-<html lang="en">
+<!DOCTYPE html>
     <head>
         <title>Personal Portfolio Webpage</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="web.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
-    <body>
-        <main>
-            <section>
-                <div class="container"> 
-                    <div id="photo">
-                            <img src="danielmatterhorn.jpg" alt="Daniel in Switzerland" width="200">
-                        </div>
-                        <div id="contact">
-                            <h3>Contact Information</h3>
-                                    <p>Daniel Olintho Canhedo</p>
-                                    <p>Syracuse University</p>
-                                    <p>College of Engineering and Computer Science</p>
-                                    <p>(914) 954-4450</p>
-                                    <p>danielcanhedo@gmail.com</p>
-                                    <br>
-                                    <p><a href="https://github.com/Daniwave100">Github</a></p>
-                                    <p><a href="https://www.linkedin.com/in/daniel-canhedo-7821a722a/">Linkedin</a></p>
-                                    <br>
-                            </div>
-                    
-                </div>
-            </section>
-        <section>
-            <div id="Bio">
-                <p>I am a Computer Science major at Syracuse University. I have interest in programming applications in relation to data and am currently delving into the world of front-end development. I am also an Army ROTC Cadet and a soldier in the New York Army National Guard. I am currently honing my leadership and teamwork abilities, with the ultimate goal of one day serving as a Cyber Warfare Officer in the Army National Guard.</p>
-                <p>I love soccer (Liverpool is the best), chasing new running PRs, spending time outside, and exploring the world.</p>
-            </div>
-        </section> 
 
-        <section>
-            <h3>Research</h3>
-            <p><strong>YouTube Comment Bot Detector</strong> <em>DARPA</em></p>
-            
-            <p>In March of 2022 during the onset of the Russian-Ukraine War, a video of the President of Ukraine, Volodymyr Zelenskyy surfaced. In the video, Zelenskyy calls for the immediate laydown of weapons by Ukrainian soldiers. However, this video was nothing more than a hoax, perpetuated by artificial intelligence (AI) deepfakes. 
-                The prevalence of disinformation facilitated by AI is a growing concern, posing a threat to not only individuals, but organizations, countries, and arguably civilization itself. However,  the Defense Advanced Research Projects Agency (DARPA) is working towards solutions to detect and combat such threats.
-                DARPA's Semantic Forensics program aims to develop semantic technologies that can detect and assess falsified media, including images, text, audio and video.</p>    
-            <p> <p>Under the mentorship of research professor Dr. Jason Davis, the SemaFor team at Syracuse University is a specialized research group dedicated to collecting, cleaning, and labeling data for training AI models as part of DARPA’s broader SemaFor initiative. This work is supported by funding from the Syracuse Office of Undergraduate Research and Creative Engagement (SOURCE).</p>
-            <iframe width="420" height="315" src="https://www.youtube.com/embed/10ENWUrzj-o"></iframe>
-            
-            <p>Bots and fake comments have become a huge problem on many social media platforms. It has become increasingly difficult for the average person to distinguish real comments from fake. While some bots merely serve to manipulate an algorithm for more outreach, some are instead being used for the purpose of scamming people out of their hard-earned money.
-                In the image below, bots emulate a real conversation with one eventually referring to a fake financial advisor. An unsuspecting victim would then search the advisor on the internet, and eventually find a web-page where they can then get in contact with the scammer.</p>
-            <p>I collected over 10,000 comments from different YouTube financial videos (where scam comments are most prevalent) using a Python script and YouTube’s Cloud API. I then labeled each YouTube comment conversation as malicious or not. To do so, I utilized the following parameters to classify the data: </p>
-            <ol>
-                <li>The comment must be part of a conversation thread of at least 3 comments. </li>
-                <li>The conversation must have a comment that refers to a "financial advisor" which includes a name.</li>
-                <li>The entire conversation must take place within one week of the first comment.</li>
-            
-            </ol>
-            
-            <p>Analyzing the dataset of 10,000 comments, roughly 300 were classified as bot comments. While this only accounts for 3.41% of our entire dataset, bot comments usually like each others comments to manipulate the YouTube algorithm, and generate higher search queries. Essentially, bot comments almost always have hundreds and even thousands of likes, bringing them to the top of YouTube comment sections, making it easier for people to spot them.</p>
-            <p>Furthermore, by analyzing average comment length, it is clear that bot comments on average are roughly 50 words longer than a typical comment. This is because bot comments try to emulate a real conversation compared to simply making a brief statement on a YouTube video comment section. This is a key factor that the model will use to classify bot comments from regular comments.</p>
-            <p>Another key factor, and arguably the most important factor that plays into classification will be the use of names in the comment. The main part of the scam is getting a real person to search up the fictional financial advisor, where the goal is to lure the victim into sending money. Generative AI models use tokenization, the break-up of long sentences into words, to score a comment's validity. Here, the model would identify “Grace Adams Cook” as a name and use that as a clue that it is likely a bot comment.</p>
-            <p>My current model is a convolutional neural network. The model is currently in its early stages, utilizing a feedforward architecture trained on TF-IDF vectorized text data to classify bot-generated comments. The model consists of an input layer with 186 features, corresponding to the most relevant words from the dataset, followed by four hidden layers with 500 neurons each, using ReLU activation to introduce non-linearity. The final output layer applies LogSoftmax activation for binary classification (bot or not bot). Training is conducted using the Negative Log-Likelihood Loss (NLLLoss) function, optimized with Adam optimizer (learning rate = 0.01) to adjust weights via gradient descent. The dataset undergoes preprocessing with NLTK, including stopword removal and stemming, ensuring clean data for efficient training. While the current model focuses solely on textual features, future iterations will incorporate like count, reply count, and comment timestamps as additional parameters, as bots often manipulate engagement metrics to gain visibility. </p>
-            <p>Eventually, I plan to explore alternative machine learning techniques, such as Random Forest Classifiers, Decision Tree Classifiers, and Transformer-based architecture models, to evaluate their performance against our neural network in bot detection. By integrating these techniques and refining our training pipeline, I aim to improve classification accuracy and develop a more robust model capable of detecting evolving bot behaviors.</p>
-            <p>Ultimately, the goal is to create a model that can successfully distinguish phishing comments on YouTube. By implementing technologies such as this, we can minimize the chances of people falling victim to scams. Though our project is still developing, one day we hope our technology can be utilized by social media platforms such as YouTube to create a safer internet for all.</p>
-            <p>Check out some repositories here:</p>
-            <p><a href="https://github.com/Daniwave100/YouTube-Bot-NN-Classifier/tree/main">Neural Network Text Classifier Model</a></p>
-            <p><a href="https://github.com/Daniwave100/YouTube-Comment-Scraper">YouTube Comment Scraper</a></p>
-        </section>
+<!--Nav bar-->
+<!--hey there i'm daniel-->
+<!--About me-->
+<!--Contact me-->
 
-        <section>
-            <h3>Personal Projects</h3>
-            <div class="projects">
-            
-                <div class="project">
-                    <div class="projectphotos">
-                        <img src="Datathon.png" width="210px">
-                    </div>
-                    <div class="projecttext">
-                        <p><strong>Analyzing Syracuse Municipal Complaint Resolution</strong> <em>CuseHacks Datathon</em></p>
-                        <p>This project analyzed municipal complaint resolution efficiency in Syracuse, leveraging data visualization and predictive modeling.</p>
-                        <ul>
-                            <li>Recognized for Best Presentation at CuseHacks 2025 for delivering compelling visual storytelling and actionable municipal insights.</li>
-                            <li>Used Python, Pandas DataFrame, and Seaborn to clean, categorize, and visualize large-scale city complaint reports, revealing key trends in departmental performance and resolution efficiency.</li>
-                            <li>Leveraged Scikit-Learn (sklearn) with Linear Regression to predict complaint resolution times and evaluate how different city departments improve over time.</li>
-                        </ul>
-                    </div>
-                </div>
+<body>
+    <canvas id="starfield"></canvas>
+    <section class="hi-there">
+        <span>
+        <h1>hi!</h1>
+        <h1>i'm Daniel.</h1>
+        </span>
+    </section>
 
-            <div class="project">
-                <div class="projectphotos">
-                    <img src="LinearRegression.png" width="210">
-                </div>
-                <div class="projecttext">
-                    <p><strong>Data2LinearRegression</strong> <em>CuseHacks Hackathon</em></p>
-                    <p>The project's goal is provide a web interface where a user can upload a CSV file, store its data in a SQLite database, and create a linear regression model based off of two provided variables.</p>
-                    <ul>
-                        <li>Developed a web-based application utilizing Python, Flask, and SQLite that allows users to upload CSV files, organize the data into SQL tables and generate linear regression models for data analysis.</li>
-                        <li>Implemented a front-end interface with HTML, CSS, and JavaScript, featuring drag and drop functionality, input validation for assigning graph variables, and regression plot visualization, ensuring a user-friendly experience.</li>
-                        <li>Integrated Matplotlib and Seaborn to generate real-time regression plots for visual analysis.</li>
-                    </ul>
-                </div>
-            </div>
+    <header>
+        <nav>
+            <h3>daniel canhedo</h3>
+            <ul class="nav_links">
+                <li><a href="index.html">about</a></li>
+                <li><a href="projects.html">projects</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <div class="project">
-                <div class="projectphotos">
-                    <img src="Chess.png" width="210px">
-                </div>
-                <div class="projecttext">
-                    <p><strong>Chess</strong> <em>Personal</em></p>
-                    <p>The goal of this project is to create a modified verison of chess that can be played in the terminal. </p>
-                    <ul>
-                        <li>Designed and implemented a functional modified version of chess, utilizing algorithms to track game state, and maintain accurate board consistency.</li>
-                        <li>Utilized object-oriented design principles to develop chess piece classes (Pawn, Rook, etc.) with specific movement rules and validations.</li>
-                    </ul>
-                </div>
-            </div>
-        
+    <!-- About Me Section -->
+    <div class="about">
+        <div class="about-text">
+            <h2>about me</h2>
+            <p>I am a Computer Science student at Syracuse University. My work is centered around Python and AI/LLM engineering. I have experience designing, developing, and deploying AI systems within production environments to support data teams and automate business functions using techniques such as prompt-engineering, retrieval-augmented generation (RAG), and agentic AI. I regularly work with frameworks and tools such as Langchain, LangGraph, AutoGen, OpenAI SDK, scikit-learn, PyTorch, pandas, FastAPI, and more. I also have hands-on experience deploying applications on AWS and utilizing many of its services (Lambda, S3, EC2, Fargate). I enjoy using Streamlit's API to build interactive data apps and chatbots that are accessible to both technical and non-technical users alike.</p>
+            <p>In data-intensive environments, I've worked with platforms such as Databricks and Dremio to support data processing, governance, and discoverability. Much of my work focuses on improving data quality, lineage, and discoverability- building systems that make large, complex datasets reliable and actionable. I am comfortable working in Agile software development environments and collaborating with cross-functional teams, contributing across the entire software development lifecycle. While my background is centered around data, I love to dive into all branches of software development, especially front-end and full-stack application development.</p>
         </div>
-        </section>
+        <div class="about-image">
+            <img src="assets/images/danielmatterhorn.jpg?v=2" alt="Photo of Daniel">
+        </div>
+    </div>
 
-        
+    <!-- Research Section -->
+    <div class="section-header">
+        <h2>research</h2>
+    </div>
 
-            <section>
-                <h3>Coursework</h3>
-                <div class="coursework">
-                    <p><em>CIS 321: Introduction to Probability & Statistics</em></p>
-                    <p>Programming-oriented introduction to fundamentals in statistics and probability; elementary statistics, graphical and numerical representation; probability distributions; tests and confidence intervals; regression, and correlation.</p>
-                </div>
-                <div class="coursework">
-                    <p><em>CIS 341: Computer Organization & Programming Systems</em></p>
-                    <p>Digital logic, data types and their representations, instruction set architecture, assembly language, program construction, processors, memory hierarchy, traps and interrupts, privilege and security, input-output subsystems.</p>
-                </div>
-                    <div class="coursework">
-                    <p><em>CIS 352: Programming Language: Theory & Practice</em></p>
-                    <p>Environments, stores, scoping, functional and imperative languages, modules, classes, data encapsulation, types, and polymorphism. Implementation of these constructs in a definitional interpreter.</p>
-                </div>
-                <div class="coursework">
-                    <p><em>CSE 384: Systems and Network Programming</em></p>
-                    <p>Unix programming and shell scripting for systems and network software. Makefiles, compilers, linkers, debuggers, software with multiple source files. Dynamic memory allocation, system calls, C programming, pointers, concurrent/parallel programming, defensive programming techniques, network programming.</p>
-                </div>
-                <div class="coursework">
-                    <p><em>CIS 375: Introduction to Discrete Mathematics</em></p>
-                    <p>Basic set theory and symbolic logic. Methods of proof, including mathematical induction. Relations, partitions, partial orders, functions, and graphs.</p>
-                </div>
-                <div class="coursework">
-                    <p><em>CIS 351: Data Structures </em></p>
-                    <p>Abstract data structures including arrays, lists, trees, binary search trees, priority queues, graphs.  Algorithm analysis.  Examples include data structures used for security-related applications.</p>
-                </div>
-                <div class="coursework">
-                    <p><em>CIS 252: Elements of Computer Science</em></p>
-                    <p>Introduction to key computer-science concepts through functional programming. Recursion, data representation, data abstraction, and computational patterns. Algebraic data types and higher-order functions. Models of computation.</p>
-                </div>
-                <div class="coursework">
-                    <p><em>PHI 251: Logic</em></p>
-                    <p>Logic as a formal language, as a component of natural language, and as a basis of a programming language. Varieties of logical systems and techniques. Syntax, semantics and pragmatics.</p>
-                </div>
-            </section>
-        </main>
-        <footer>
-            
-        </footer>
-    </body>
+    <!-- Second Paragraph - No Picture -->
+    <div class="about-paragraph">
+        <p>I currently work as an ML Research Assistant supporting Defense Advanced Research Projects Agency (DARPA) Semantics Forensics, where my research focuses on malicious applications of generative AI and synthetic media. My work involves designing Python data collection and web scraping pipelines to gather large-scale datasets from online platforms, which are then curated and used to train and evaluate machine learning models. I have applied deep learning frameworks (PyTorch) and large language models to classify bot-generated, and malicious phishing content, developing detection capabilities directly relevant to modern threats.</p>
+        <p>As part of the project's future scope, I am exploring expansion into audio-based detection capabilities, with the goal of extending these techniques to synthetic voice and audio. In conjunction, I am examining how agentic AI systems can be used in social engineering contexts, including the use of coordinated bots and agents to interact with real users, extract sensitive or behavioral information, and utilize that data for malicious use.</p>
+        <p>My team presents progress and findings bi-annually at the Syracuse Office of Undergraduate Research & Creative Engagement (SOURCE) Symposium.</p>
+    </div>
+
+    <!-- Army Bio Section -->
+    <div class="section-header">
+        <h2>army bio</h2>
+    </div>
+
+    <!-- Third Paragraph with Army Picture -->
+    <div class="about">
+        <div class="about-text">
+            <p>Alongside my academic and technical work, I serve as a soldier in the New York Army National Guard, having enlisted in 2021 as a 12R Interior Electrician. During my time in the Guard, I served on numerous state active-duty missions, including emergency storm relief operations, where I served as a team-leader. I also competed in and won the 204th Engineer Battalion Best Warrior Competition, and was awarded the Army Achievement Medal.</p>
+            <p>My experience as an enlisted soldier in the Army ultimately inspired me to pursue service through leadership as a commissioned officer. In 2023, I began my college career and joined the Syracuse University Army ROTC program. Through ROTC, I was selected to attend Air Assault School at the United States Military Academy. I was also selected to serve as Cadet Company Commander during my MSIII year, responsible for leading and managing over 120 cadets. My ultimate goal is to branch Cyber in the U.S. Army as a 17A Cyber Warfare Officer, where I can combine my background in technology and service in defense of the nation's digital domain.</p>
+        </div>
+        <div class="about-image">
+            <img src="assets/images/army.jpg?v=2" alt="Daniel in the Army">
+        </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="section-divider">
+        <p>⸻</p>
+    </div>
+
+    <!-- Oh You're Still Reading Section -->
+    <div class="still-reading">
+        <h2>oh — you're still reading?</h2>
+    </div>
+
+    <!-- Sports and Lifestyle Section -->
+    <div class="about-paragraph">
+        <p>Beyond all this tech stuff, I love to pretend that I am a professional athlete :). I strongly believe that in order to take care of the mind, you must first take care of the body. Exercise- whether it be running, lifting, swimming, cycling or playing sports, like soccer, basketball, or golf- has always been a big part of my life and something I enjoy.</p>
+    </div>
+
+    <!-- Endurance Section with Picture -->
+    <div class="about">
+        <div class="about-text">
+            <p>After playing soccer in high-school, I became especially hooked on endurance sports. I ran my first full marathon in April of 2025 and later ran my first World Marathon Major in October of 2025 (Chicago). Running, swimming, and cycling represent the constant internal battle we all face- sacrificing momentary comfort for what truly brings fulfillment and reward in life. As the great Eliud Kipchoge puts it, "Only the disciplined ones in life are free. If you are undisciplined, you are a slave to your moods and your passions". Life isn't a sprint, it's a marathon! (or a triathlon ;))</p>
+        </div>
+        <div class="about-image running-image">
+            <img src="assets/images/running.jpg?v=2" alt="Daniel running">
+            <p class="image-caption"><em>running the Chicago Marathon 2025 (i was dying ;))</em></p>
+        </div>
+    </div>
+
+    <!-- Travel Paragraph - No Picture -->
+    <div class="about-paragraph">
+        <p>I also have a passion for travel, the outdoors, and photography. I am very fortunate to have visited 26 countries, and 5 continents so far. The awe, excitement, and adrenaline of stepping foot somewhere completely new is what keeps me going day after day. My perspectives, thoughts, and worldview have all been shaped through my experiences traveling to different countries and getting to know people from all around the world. I especially love to surround myself in natural landscapes. I carry these memories with me through my passion for photography. A camera and tripod is all I need to take pictures that tell stories long after the adventure ends.</p>
+    </div>
+
+    <!-- Photos Section Header -->
+    <div class="section-header">
+        <h2>my photography</h2>
+    </div>
+
+    <!-- Instagram-style Photo Grid -->
+    <div class="photo-grid">
+        <div class="grid-item" onclick="openModal(0)">
+            <img src="assets/images/travel1.jpg?v=2" alt="Travel moment 1">
+        </div>
+        <div class="grid-item" onclick="openModal(1)">
+            <img src="assets/images/travel2.jpg?v=2" alt="Travel moment 2">
+        </div>
+        <div class="grid-item" onclick="openModal(2)">
+            <img src="assets/images/travel3.jpg?v=2" alt="Travel moment 3">
+        </div>
+        <div class="grid-item" onclick="openModal(3)">
+            <img src="assets/images/travel4.jpg?v=2" alt="Travel moment 4">
+        </div>
+        <div class="grid-item" onclick="openModal(4)">
+            <img src="assets/images/travel5.jpg?v=2" alt="Travel moment 5">
+        </div>
+        <div class="grid-item" onclick="openModal(5)">
+            <img src="assets/images/travel6.jpg?v=2" alt="Travel moment 6">
+        </div>
+        <div class="grid-item" onclick="openModal(6)">
+            <img src="assets/images/travel7.jpg?v=2" alt="Travel moment 7">
+        </div>
+        <div class="grid-item" onclick="openModal(7)">
+            <img src="assets/images/travel8.jpg?v=2" alt="Travel moment 8">
+        </div>
+        <div class="grid-item" onclick="openModal(8)">
+            <img src="assets/images/travel9.jpg?v=2" alt="Travel moment 9">
+        </div>
+        <div class="grid-item" onclick="openModal(9)">
+            <img src="assets/images/travel10.jpg?v=2" alt="Travel moment 10">
+        </div>
+        <div class="grid-item" onclick="openModal(10)">
+            <img src="assets/images/travel11.jpg?v=2" alt="Travel moment 11">
+        </div>
+        <div class="grid-item" onclick="openModal(11)">
+            <img src="assets/images/travel12.jpg?v=2" alt="Travel moment 12">
+        </div>
+        <div class="grid-item" onclick="openModal(12)">
+            <img src="assets/images/travel13.jpg?v=2" alt="Travel moment 13">
+        </div>
+        <div class="grid-item" onclick="openModal(13)">
+            <img src="assets/images/travel14.jpg?v=2" alt="Travel moment 14">
+        </div>
+        <div class="grid-item" onclick="openModal(14)">
+            <img src="assets/images/travel15.jpg?v=2" alt="Travel moment 15">
+        </div>
+        <div class="grid-item" onclick="openModal(15)">
+            <img src="assets/images/travel16.jpg?v=2" alt="Travel moment 16">
+        </div>
+        <div class="grid-item" onclick="openModal(16)">
+            <img src="assets/images/travel17.jpg?v=2" alt="Travel moment 17">
+        </div>
+        <div class="grid-item" onclick="openModal(17)">
+            <img src="assets/images/travel18.jpg?v=2" alt="Travel moment 18">
+        </div>
+        <div class="grid-item" onclick="openModal(18)">
+            <img src="assets/images/travel19.jpg?v=2" alt="Travel moment 19">
+        </div>
+        <div class="grid-item" onclick="openModal(19)">
+            <img src="assets/images/travel20.jpg?v=2" alt="Travel moment 20">
+        </div>
+        <div class="grid-item" onclick="openModal(20)">
+            <img src="assets/images/travel21.jpg?v=2" alt="Travel moment 21">
+        </div>
+        <div class="grid-item" onclick="openModal(21)">
+            <img src="assets/images/travel22.jpg?v=2" alt="Travel moment 22">
+        </div>
+        <div class="grid-item" onclick="openModal(22)">
+            <img src="assets/images/travel23.jpg?v=2" alt="Travel moment 23">
+        </div>
+        <div class="grid-item" onclick="openModal(23)">
+            <img src="assets/images/travel24.jpg?v=2" alt="Travel moment 24">
+        </div>
+        <div class="grid-item" onclick="openModal(24)">
+            <img src="assets/images/travel25.jpg?v=2" alt="Travel moment 25">
+        </div>
+        <div class="grid-item" onclick="openModal(25)">
+            <img src="assets/images/travel26.jpg?v=2" alt="Travel moment 26">
+        </div>
+        <div class="grid-item" onclick="openModal(26)">
+            <img src="assets/images/travel27.jpg?v=2" alt="Travel moment 27">
+        </div>
+        <div class="grid-item" onclick="openModal(27)">
+            <img src="assets/images/travel28.jpg?v=2" alt="Travel moment 28">
+        </div>
+        <div class="grid-item" onclick="openModal(28)">
+            <img src="assets/images/travel29.jpg?v=2" alt="Travel moment 29">
+        </div>
+        <div class="grid-item" onclick="openModal(29)">
+            <img src="assets/images/travel30.jpg?v=2" alt="Travel moment 30">
+        </div>
+    </div>
+
+    <!-- Modal for Expanded Image -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+        <div class="modal-nav">
+            <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+            <button class="next" onclick="changeImage(1)">&#10095;</button>
+        </div>
+    </div>
+
+    <section style="height:30vh;"></section>
+
+    <!--scripts-->
+    <script src="assets/js/stars.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
 </html>
+

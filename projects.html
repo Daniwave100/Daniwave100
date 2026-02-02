@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>projects - Daniel Canhedo</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <canvas id="starfield"></canvas>
+    
+    <header>
+        <nav>
+            <h3>DANIEL CANHEDO</h3>
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="projects-hero">
+        <h1>projects</h1>
+        <p>collection of my work across personal projects, research, school, and hackathons</p>
+    </section>
+
+    <!-- Personal Projects Section -->
+    <section class="projects-section">
+        <h2 class="section-title">Personal Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card" onclick="openProjectModal('portfolio-website', 'Portfolio', 'https://github.com/Daniwave100/Portfolia')">
+                <div class="project-image">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3>Portfolia</h3>
+                <p>A comprehensive portfolio management and stock analysis platform built with Streamlit.</p>
+                <div class="project-links">
+                    <a href="https://github.com/Daniwave100/Portfolia" target="_blank" onclick="event.stopPropagation()">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card" onclick="openProjectModal('chess', 'Chess Game', 'https://github.com/Daniwave100/Chess')">
+                <div class="project-image">
+                    <i class="fas fa-chess"></i>
+                </div>
+                <h3>Chess</h3>
+                <p>Chess game implementation with piece movement and game logic</p>
+                <div class="project-links">
+                    <a href="https://github.com/Daniwave100/Chess" target="_blank" onclick="event.stopPropagation()">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card" onclick="openProjectModal('tictactoe', 'Tic Tac Toe', 'https://github.com/Daniwave100/tiktaktoe')">
+                <div class="project-image">
+                    <i class="fas fa-tic-tac-toe"></i>
+                </div>
+                <h3>Tik Tak Toe</h3>
+                <p>Classic tic tac toe game with AI opponent</p>
+                <div class="project-links">
+                    <a href="https://github.com/Daniwave100/tiktaktoe" target="_blank" onclick="event.stopPropagation()">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section class="projects-section">
+        <h2 class="section-title">Research</h2>
+        <div class="projects-grid">
+            <div class="project-card" onclick="openProjectModal('youtube-bot-nn', 'YouTube Bot NN Classifier', 'https://github.com/Daniwave100/YouTube-Bot-NN-Classifier')">
+                <div class="project-image">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>YouTube Bot Neural Network Classifier</h3>
+                <p>Deep learning model trained to detect YouTube phishing comments and bot-generated content</p>
+                <div class="project-links">
+                    <a href="https://github.com/Daniwave100/YouTube-Bot-NN-Classifier" target="_blank" onclick="event.stopPropagation()">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card" onclick="openProjectModal('youtube-scraper', 'YouTube Comment Scraper', 'https://github.com/Daniwave100/YouTube-Comment-Scraper')">
+                <div class="project-image">
+                    <i class="fas fa-scrape"></i>
+                </div>
+                <h3>YouTube-Comment-Scraper</h3>
+                <p>Web scraping tool to collect and analyze YouTube comments at scale</p>
+                <div class="project-links">
+                    <a href="https://github.com/Daniwave100/YouTube-Comment-Scraper" target="_blank" onclick="event.stopPropagation()">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- School Projects Section -->
+    <section class="projects-section">
+        <h2 class="section-title">School Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card" onclick="openProjectModal('marvel-network', 'Marvel Network Analysis', 'https://github.com/Daniwave100/Social_Media_Data_Mining_Project')">
+                <div class="project-image">
+                    <i class="fas fa-network-wired"></i>
+                </div>
+                <h3>An Analysis of the Marvel Network</h3>
+                <p>Graph analysis of Marvel character relationships and interactions</p>
+                <div class="project-links">
+                    <a href="https://github.com/Daniwave100/Social_Media_Data_Mining_Project" target="_blank" onclick="event.stopPropagation()">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card" onclick="openProjectModal('dad-rental', 'DAD Car Rental', 'https://github.com/Daniwave100/car_rental_app')">
+                <div class="project-image">
+                    <i class="fas fa-car"></i>
+                </div>
+                <h3>DAD Car Rental</h3>
+                <p>Car rental management system with booking and inventory tracking</p>
+                <div class="project-links">
+                    <a href="https://github.com/Daniwave100/car_rental_app" target="_blank" onclick="event.stopPropagation()">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card" onclick="openProjectModal('studybuddy', 'StudyBuddy', 'https://github.com/Daniwave100/Team16_StudyBuddy')">
+                <div class="project-image">
+                    <i class="fas fa-book"></i>
+                </div>
+                <h3>StudyBuddy</h3>
+                <p>Collaborative study platform for students to share notes and resources</p>
+                <div class="project-links">
+                    <a href="https://github.com/Daniwave100/Team16_StudyBuddy" target="_blank" onclick="event.stopPropagation()">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hackathons Section -->
+    <section class="projects-section">
+        <h2 class="section-title">Hackathons</h2>
+        <div class="projects-grid">
+            <div class="project-card" onclick="openProjectModal('syracuse-complaints', 'Analyzing Syracuse Municipal Complaint Resolution', 'https://github.com/Daniwave100/Analyzing-Syracuse-Municipal-Complaint-Resolution')">
+                <div class="project-image">
+                    <i class="fas fa-chart-bar"></i>
+                </div>
+                <h3>Analyzing Syracuse Municipal Complaint Resolution</h3>
+                <p>Data analysis of city complaint resolution times and effectiveness</p>
+                <div class="project-links">
+                    <a href="https://github.com/Daniwave100/Analyzing-Syracuse-Municipal-Complaint-Resolution" target="_blank" onclick="event.stopPropagation()">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card" onclick="openProjectModal('data2lr', 'Data2LinearRegression', 'https://github.com/Daniwave100/Data2LinearRegression')">
+                <div class="project-image">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Data2LinearRegression</h3>
+                <p>Tool to convert raw data and generate linear regression models</p>
+                <div class="project-links">
+                    <a href="https://github.com/Daniwave100/Data2LinearRegression" target="_blank" onclick="event.stopPropagation()">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="project-modal">
+        <span class="project-close" onclick="closeProjectModal()">&times;</span>
+        <div class="project-modal-content">
+            <div class="project-modal-header">
+                <h2 id="modalProjectTitle"></h2>
+                <a id="modalGithubLink" href="#" target="_blank" class="github-button">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </div>
+            <div class="project-modal-body">
+                <div id="readmeContent" class="readme-content">Loading...</div>
+            </div>
+        </div>
+    </div>
+
+    <section style="height:20vh;"></section>
+
+    <script src="assets/js/stars.js"></script>
+    <script src="assets/js/projects.js"></script>
+</body>
+</html>
