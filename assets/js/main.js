@@ -33,6 +33,12 @@ window.addEventListener('scroll', () => {
       section.classList.remove('visible');
     }
   });
+
+  // Hide about me section when scrolled to the top
+  if (window.scrollY < 100) {
+    const firstAbout = document.querySelector('.about');
+    if (firstAbout) firstAbout.classList.remove('visible');
+  }
 });
 
 // Scroll event for contact section

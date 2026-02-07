@@ -67,19 +67,24 @@ header.visible {
 }
 
 nav {
-  background-color: rgba(0, 0, 0, 1); /* semi-transparent so stars peek through */
-  padding: 2rem;
+  background-color: rgba(0, 0, 0, 1);
+  padding: 0.6rem 1.5rem;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+}
+
+nav h3 {
+  font-size: 1rem;
+  white-space: nowrap;
 }
 
 /* List + Links */
 ul {
   display: flex;
   list-style: none;
-  font-size: 20px;
+  font-size: 0.85rem;
   gap: 1rem;
 }
 
@@ -90,17 +95,6 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-
-@media (max-width:680px) {
-  nav {
-    flex-direction: column;
-    gap: 3rem;
-  }
-
-  ul {
-    flex-direction: column;
-  }
 }
 
 .about {
@@ -509,6 +503,10 @@ form label {
         padding: 0 50px 50px 50px;
     }
     
+    .section-header {
+        padding: 30px 50px 20px 50px;
+    }
+    
     .still-reading {
         padding: 50px;
     }
@@ -526,6 +524,10 @@ form label {
     
     .about-paragraph {
         padding: 0 30px 30px 30px;
+    }
+    
+    .section-header {
+        padding: 30px 30px 20px 30px;
     }
     
     .still-reading {
